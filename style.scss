@@ -31,6 +31,10 @@ input, button {
     outline: none;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .header {
     position: absolute;
     top: 20px;
@@ -464,16 +468,44 @@ input, button {
 }
 
 @media screen and (max-width: 575px){
-    .header_wrapper {
-        gap: 20px;
+
+    .burger-menu {
+        display: inline-flex;
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header_wrapper .header_nav,
+    .header_button  {
+        display: none;
+    }
+
+    .section_become_wrapper .block_text .block_title {
+        font-size: 30px;
+    }
+
+    .section_start_wrapper_title,
+    .section_mission_wrapper .section_mission_content_subtitle,
+    .section_good_wrapper_content_title {
+        font-size: 32px;
+    }
+
+    .section_start_items .card_info_subtitpe {
+        font-size: 30px;
+    }
+
+    .header {
+        padding: 10px;
     }
 
     .section_better {
-        padding-top: 260px;
+        padding-top: 150px;
     }
 
     .section_better_info .main_title {
-        font-size: 50px;
+        font-size: 35px;
+        line-height: 50px;
     }
 
     .section_become_wrapper .block {
